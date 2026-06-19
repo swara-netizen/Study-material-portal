@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Download Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Download Study Materials</h1>
+
+    <input type="text" id="searchBox" placeholder="Search Subject">
+
+    <button onclick="searchNotes()">Search</button>
+
+    <br><br>
+
+    <div id="notesList">
+
+        <div class="note">
+            <h3>Mathematics</h3>
+            <a href="notes/Maths.pdf" download>
+                <button>Download PDF</button>
+            </a>
+        </div>
+
+        <div class="note">
+            <h3>Physics</h3>
+            <a href="notes/Physics.pdf" download>
+                <button>Download PDF</button>
+            </a>
+        </div>
+
+        <div class="note">
+            <h3>Biology</h3>
+            <a href="notes/Biology.pdf" download>
+                <button>Download PDF</button>
+            </a>
+        </div>
+
+    </div>
+
+    <br>
+
+    <a href="index.html">
+        <button>Home</button>
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

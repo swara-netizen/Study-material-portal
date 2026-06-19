@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Subjects</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Subjects</h1>
+
+<ul>
+<li><a href="notes/Maths.pdf">Mathematics</a></li>
+<li><a href="notes/Physics.pdf">Physics</a></li>
+<li><a href="notes/Biology.pdf">Biology</a></li>
+</ul>
+
+</body>
+</html>

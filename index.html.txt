@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Study Material Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Study Material Sharing Portal</h1>
+
+<h2>Download Notes Anytime Anywhere</h2>
+
+<a href="subjects.html">
+<button>Subjects</button>
+</a>
+
+<a href="download.html">
+<button>Download Notes</button>
+</a>
