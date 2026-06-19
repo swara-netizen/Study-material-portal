@@ -1,34 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Subjects</title>
-<link rel="stylesheet" href="style.css">
+    <title>Subjects</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .pdf-container{
+            width:100%;
+            height:700px;
+            margin-top:20px;
+        }
+
+        .download-btn{
+            float:right;
+            background:#28a745;
+            color:white;
+            padding:10px 20px;
+            text-decoration:none;
+            border-radius:5px;
+            margin-bottom:10px;
+        }
+
+        .subject-link{
+            display:block;
+            margin:10px;
+            font-size:20px;
+            cursor:pointer;
+            color:blue;
+        }
+    </style>
 </head>
 
 <body>
 
 <h1>Subjects</h1>
 
-<ul>
-<li><a href="notes/Maths.pdf">Mathematics</a></li>
-<a href="notes/Maths.pdf" download="Mathematics_Notes.pdf" class="download-btn">
-                📩 Download the PDF
-            </a>
-        </li>
+<div>
 
-<li><a href="notes/Physics.pdf">Physics</a></li>
-<li><a href="notes/Biology.pdf">Biology</a></li>
-</ul>
-
-</body>
-  
-</html>
-  <a href="index.html">
-        <button>Home</button>
+    <a class="subject-link"
+       onclick="openPDF('Notes/Maths.pdf')">
+       Mathematics
     </a>
 
-    <script src="script.js"></script>
+    <a class="subject-link"
+       onclick="openPDF('Notes/Physics.pdf')">
+       Physics
+    </a>
+
+    <a class="subject-link"
+       onclick="openPDF('Notes/Biology.pdf')">
+       Biology
+    </a>
+
+</div>
+
+<div id="pdfSection" style="display:none;">
+
+    <a id="downloadLink"
+       class="download-btn"
+       download>
+       Download PDF
+    </a>
+
+    <iframe id="pdfViewer"
+            class="pdf-container">
+    </iframe>
+
+</div>
+
+<script>
+
+function openPDF(pdfPath)
+{
+    document.getElementById("pdfSection").style.display="block";
+
+    document.getElementById("pdfViewer").src=pdfPath;
+
+    document.getElementById("downloadLink").href=pdfPath;
+}
+
+</script>
 
 </body>
-
 </html>
